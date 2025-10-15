@@ -1,0 +1,14 @@
+{
+  "delta_feature_order": [
+    "delta_round_ko_percentage",
+    "delta_estimated_punch_resistance",
+    "delta_estimated_ability_to_take_punch",
+    "delta_avg_weight",
+    "delta_estimated_punch_power",
+    "delta_rounds_boxed",
+    "delta_has_been_ko_percentage"
+  ],
+  "threshold": 0.55,
+  "version": "v1.0",
+  "notes": "Logistic on delta features; class_weight=balanced; trained on full dataset."
+}
