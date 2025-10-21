@@ -23,8 +23,8 @@ The analysis revealed that a fighter's raw stats were less predictive than their
 
 The model confirmed that fights are most influenced by a fighter's finishing profile and durability relative to their opponent.
 
-1.  **Top Positive Predictors:** `delta_KO%` (having a higher KO rate than the opponent) and `delta_Punch_Resistance`.
-2.  **Top Negative Predictor:** `delta_Has_Been_KO%` (having been knocked out more in the past is a strong negative factor).
+1.  **Top Positive Predictors:** `delta_round_ko_percentage` (having a higher KO rate than the opponent) and `delta_estimated_punch_resistance`.
+2.  **Top Negative Predictor:** `delta_has_been_ko_percentage` (having been knocked out more in the past is a strong negative factor).
 
 ## 🛠️ Methodology
 
@@ -50,9 +50,6 @@ The project followed a structured data science workflow:
 │   └── config.json           # Model configuration (features, threshold)
 ├── notebooks/
 │   └── Predictive_Fight_Modeling.ipynb  # Main notebook (Cleaning, EDA, Modeling)
-├── scripts/
-│   ├── utils.py              # Helper functions for cleaning, features, & prediction
-│   └── plot_helpers.py       # Helper functions for visualizations
 └── README.md
 ```
 ## ⚙️ How to Reproduce This Project
